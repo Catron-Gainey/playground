@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground</title>
+<style>
+
+h1 {justify-content: center; align-content: center; display: flex;}
+.wrapper {height: 700px;}
+.bottom {   height: 800px;
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-around;  
+            border: solid 2px blue;}
+.box {height: 300px; width: 300px;border: solid 2px red;}
+
+</style>
+</head>
+<body>
+    <Div class="wrapper" >
+        <div class = "top">
+            <h1>Welcome!</h1>
+        </div>
+        <div class ="bottom">
+            {% for i in range(number): %}
+                <div class="box" style="background-color: {{color}};"></div>
+            {% endfor %}
+        </div>
+    </Div>
+</body>
+</html>
